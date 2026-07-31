@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahman Islamzada - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --heading: #ffffff;
+            --accent: #58a6ff;
+            --accent-green: #238636;
+            --tag-bg: #1f6feb23;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--heading);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .tag {
+            background-color: var(--tag-bg);
+            color: var(--accent);
+            border: 1px solid #388bfd4d;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .project-card, .timeline-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3, .timeline-item h3 {
+            color: var(--heading);
+            font-size: 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.6rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Rahman Islamzada</h1>
+            <div class="subtitle">ML Engineering Intern at FlyRank AI</div>
+            <p class="intro">Working on LLMs and machine learning systems. Studying Computer Engineering at Qarabağ University while going through Holberton School's software engineering program in parallel.</p>
+            <p class="intro" style="margin-top: 0.5rem;"><em>I build things that actually run — from fraud detection models to REST APIs to hardware architecture work. Still early, but moving fast.</em></p>
+            <span class="status-badge">Open to opportunities</span>
+        </header>
+
+        <section>
+            <h2>What I'm Working With</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>ML / Data</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">pandas</span>
+                        <span class="tag">SMOTE</span>
+                        <span class="tag">Streamlit</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <div class="tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Systems & Networking</h3>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">OSI model</span>
+                        <span class="tag">TCP/UDP</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Hardware</h3>
+                    <div class="tags">
+                        <span class="tag">Hardware Architecture (Azeros)</span>
+                        <span class="tag">Assembly fundamentals</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Fraud Detection ML</h3>
+                <p>XGBoost model trained on 284,807 real credit card transactions. The tricky part was the 0.17% fraud rate — handled with SMOTE. ROC-AUC: 0.97. Comes with a Streamlit dashboard for real-time predictions.</p>
+            </div>
+            <div class="project-card">
+                <h3>LAN Chat App</h3>
+                <p>Local messenger built for company-internal use. Admin panel + client UI, no internet required. Built with Python.</p>
+            </div>
+            <div class="project-card">
+                <h3>Network Tracking App</h3>
+                <p>Desktop app for network monitoring. Also has a web version that runs locally.</p>
+            </div>
+            <div class="project-card">
+                <h3>Cybersecurity Incident Report</h3>
+                <p>Incident report and audit project from the Google Cybersecurity program.</p>
+            </div>
+            <div class="project-card">
+                <h3>Holberton School Coursework</h3>
+                <p>Active coursework across higher-level programming (Python), web backend (Flask, APIs, MongoDB), networking (Shell scripts, TCP/UDP), and shell scripting.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Currently</h2>
+            <div class="timeline-item">
+                <ul>
+                    <li>Interning at FlyRank AI (ML Engineering, remote)</li>
+                    <li>Holberton School — software engineering track</li>
+                    <li>Qarabağ University — Computer Engineering (2024–2028)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="timeline-item">
+                <ul>
+                    <li><strong>Microsoft</strong> — Machine Learning and AI Algorithms and Techniques (Jun 2026)</li>
+                    <li><strong>Microsoft</strong> — Foundations of AI and Machine Learning (Jun 2026)</li>
+                    <li><strong>Google</strong> — Foundations of Cybersecurity (Jun 2026)</li>
+                    <li><strong>IBM</strong> — Python for Data Science, AI & Development (Aug 2025)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

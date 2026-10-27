@@ -413,6 +413,28 @@
         <section>
             <h2><i class="fa-solid fa-diagram-project"></i> Key Projects</h2>
 
+                        <div class="project-card">
+                <div class="card-header">
+                    <span class="card-title">ML-Based Adaptive Load Balancer</span>
+                    <span class="card-date">Oct 2026</span>
+                </div>
+                <p>Layer-7 HTTP load balancer built from scratch on raw asyncio TCP sockets (no nginx, no proxy libraries). Parses HTTP by hand, handles timeouts, retries and active health checks, and supports round-robin, least-connections and an ML strategy that routes each request by predicted latency (gradient boosting, epsilon-greedy exploration, automatic fallback).</p>
+                <ul class="styled-list">
+                    <li>Burst load: p95 latency 737 ms (round-robin) → 607 ms (least-connections) → 145 ms (ML).</li>
+                    <li>When the fastest backend slowed down mid-test, ML cut its traffic share from 70% to 7%.</li>
+                    <li>Reproducible benchmark (3 scenarios, 3 runs each) with honest analysis of limitations in the technical report.</li>
+                </ul>
+                <div class="tags" style="margin-top: 0.8rem;">
+                    <span class="tag">Python</span>
+                    <span class="tag">asyncio</span>
+                    <span class="tag">TCP Sockets</span>
+                    <span class="tag">HTTP</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">Load Balancing</span>
+                </div>
+                <a href="https://github.com/rahmanislamzada/ml-load-balancer" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
+            </div>
+            
             <div class="project-card">
                 <div class="card-header">
                     <span class="card-title">LSTM & Transformers for Sign Language Recognition</span>
